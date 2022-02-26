@@ -73,7 +73,8 @@ html {
 	box-sizing: border-box;
     height: 100%;
     margin: 0;
-	}
+	scroll-behavior: smooth;
+}
 
 	*, *:before, *:after {
 		box-sizing: inherit;
@@ -315,8 +316,8 @@ body > article {
 
 	#welcome-section .image {
 		border-radius: 100%;
-		width: 22em;
-		height: 22em;
+		width: 15em;
+		height: 15em;
 		margin: 0;
 	}
 
@@ -378,3 +379,4 @@ body > article {
 			margin: 0 auto;
 			width: auto;
 		}
+
