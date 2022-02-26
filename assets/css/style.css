@@ -224,7 +224,7 @@ html {
 
 /* Nav */
 
-#nav {
+#navbar {
     background-color: #d64045;
     text-align: center;
     position: fixed;
@@ -237,18 +237,18 @@ html {
     line-height: 3.5em;
 }
 
-    #nav ul {
+    #navbar ul {
         margin-bottom: 0;
         list-style: none;
         padding-left: 0;
     }
 
-    #nav li {
+    #navbar li {
         display: inline-block;
         padding-left: 0;
     }
 
-    #nav a {
+    #navbar a {
         -moz-transition: background-color .2s ease-in-out;
         -webkit-transition: background-color .2s ease-in-out;
         -ms-transition: background-color .2s ease-in-out;
@@ -266,16 +266,16 @@ html {
         padding: 0 1em;
     }
 
-     #nav a:hover {
+     #navbar a:hover {
         color: #ffffff !important;
         background: #1d3354;
     }
 
-    #nav a.active {
+    #navbar a.active {
         background: #484848;
     }
 
-    #nav a.active:before {
+    #navbar a.active:before {
         content: '';
         display: block;
         position: absolute;
