@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+	--size: 50px;   /* size of the cut */
+	--gap: 10px;    /* the gap */
+	--angle: 90deg; /* angle of the arrow */
+  }
 
 /* Basic */
 
@@ -89,7 +94,6 @@ html {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #9ed8db;
 		margin: 0 0 0.75em 0;
 	}
 
@@ -169,21 +173,25 @@ html {
 #navbar a {
 	
 	font-weight: 600;
-	color: #ffffff;
+	color: #fff8f0;
 }
 
-.full-height {
+.uno {
 	height: 100%;	
-	background: linear-gradient(to right, rgba(0,98,185,0.8), rgba(0,98,185,0.8)),url(/images/shape.jpg);
+	background: linear-gradient(to right, rgba(29, 53, 87, 0.6), rgba(0,98,185,0.6)),url(/images/shape.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
   	}
 .dos {
-	background: #467599;
+	height: 100%;
+	background: linear-gradient(to right, rgba(114, 221, 247, 0.6), rgba(29, 53, 87, 0.6)), url(/images/shape_02.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 
 }
 
 .tres {
-    background: #9ed8db;
+   	height: 100%;
+	background: #9ed8db;
 }
 
 #h-33 {
@@ -192,6 +200,10 @@ html {
 
 #h-10 {
 	height: 10% !important;
+}
+
+#h-15 {
+	height: 15% !important;
 }
 
 .heading-sec__mb-med {
@@ -206,7 +218,7 @@ html {
 	text-align: center;
 	margin-bottom: 3rem;
 	position: relative;
-	color:#9ed8db; 
+	color:#fff8f0; 
   }
   
   .heading-sec__sub {
@@ -244,10 +256,25 @@ html {
 	margin-bottom: 1rem;
 	margin-right: 1.5rem;
 	font-size: 1rem;
-	background: #9ed8db;
+	background: #ffbd00;
 	border-radius: 5px;
 	font-weight: 600;
-	color: #ffffff;
+	color: #424242;
+}
+
+.about__content-title {
+	font-weight: 700;
+	font-size: 2.8rem;
+	margin-bottom: 3rem;
+	color: #fff8f0;
+}
+
+.about__content-details-para {
+	font-size: 1.3rem;
+	color: #1b263b;
+	max-width: 60rem;
+	line-height: 1.4;
+	margin-bottom: 1rem;
 }
 /* Articles */
 
@@ -258,7 +285,7 @@ body > article {
 .heading-primary {
 	letter-spacing: 3px;
 	text-align: center;
-	color:#ffffff;
+	color: #fff8f0;
 }
 
 .heading-primary > p {
