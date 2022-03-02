@@ -91,14 +91,14 @@ textarea {
 
 .home {
 	height: 100%;	
-	background: linear-gradient(to right, rgba(29, 53, 87, 0.6), rgba(0,98,185,0.6)), url(./images/shape.jpg);
+	background: linear-gradient(to right, rgba(29, 53, 87, 0.6), rgba(0,98,185,0.6)), url('images/shape.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
   	}
 .about {
 	height: 80%;
-	background: linear-gradient(to right, rgba(114, 221, 247, 0.6), rgba(29, 53, 87, 0.6)), url(./images/shape_02.jpg);
+	background: linear-gradient(to right, rgba(114, 221, 247, 0.6), rgba(29, 53, 87, 0.6)), url('images/shape_02.jpg');
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
