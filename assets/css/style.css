@@ -119,7 +119,10 @@ textarea {
 		  padding: 8rem 0; } }
 
 .projects {
-   	background: #9ed8db;
+
+	background: linear-gradient(to left, rgba(158, 216, 219, 0.6), rgba(0,98,185,0.6)), url(../../images/shape_03b.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 
 }
 
 #h-33 {
