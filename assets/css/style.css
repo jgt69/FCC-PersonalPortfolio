@@ -49,7 +49,7 @@ a {
 
 b, strong {
 	font-weight: 600;
-	color: #9ed8db;
+	color: #fef9ef;
 }
 
 i, em {
@@ -84,7 +84,7 @@ textarea {
 
 #navbar a {
 	font-weight: 600;
-	color: #fff8f0;
+	color: #fef9ef;
 }
 
 /* Sections */
@@ -244,7 +244,7 @@ textarea {
 
 .about__content-details-para {
 	font-size: 1.8rem;
-	color: #1b263b;
+	color: #003049;
 	max-width: 60rem;
 	line-height: 1.7;
 	margin-bottom: 1rem;
@@ -318,18 +318,18 @@ textarea {
     font-size: 1.8rem; }
 .btn--theme {
 	background: #0062b9;
-	color: #fff; 
+	color: #fef9ef; 
 }
 .btn--theme-inv {
 	color: #0062b9;
-	background: #fff;
+	background: #fef9ef;
 	border: 2px solid #0062b9;
 	box-shadow: none;
 	padding: calc(1.5rem - 2px) calc(5rem - 2px); 
 }
 .btn {
-	background: #fff8f0;
-	color: #323232;
+	background: #ffecd1;
+	color: #003049;
 	letter-spacing: 2px;
 	display: inline-block;
 	font-weight: 700;
