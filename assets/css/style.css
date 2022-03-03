@@ -5,7 +5,10 @@
 	--white_2: #fef9ef;
 	--red: #d64045;
 	--black: #050505;
-	--yellow: #ffbd00;    
+	--yellow: #ffbd00;
+	--navhover: #03045e;
+	--dark-txt: #121212;
+	--btn: #ffecd1;    
 	--angle: 90deg; /* angle of the arrow */
   }
 
@@ -27,6 +30,7 @@
 
 html {
 	height: 100%;
+	background-color: var(--red);
 	font-size: 62.5%;
   	scroll-behavior: smooth;  }
   	@media only screen and (max-width: 75em) {
@@ -123,7 +127,7 @@ textarea {
 }
 
 #navbar a:hover {
-	color: #03045e;
+	color: var(--navhover);
 }
 
 /* Sections */
@@ -205,7 +209,6 @@ textarea {
 	line-height: 2.0;
 }
  
-
   /* About */
 
 .main-container {
@@ -293,10 +296,29 @@ textarea {
 
 .about__content-details-para {
 	font-size: 1.8rem;
-	color: #003049;
+	font-weight: 500;
+	color: var(--dark-txt);
 	max-width: 60rem;
 	line-height: 1.7;
 	margin-bottom: 1rem;
+}
+
+ /* Skills badgets */
+
+ .skills {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.skills__skill {
+	padding: 1rem 2rem;
+	margin-bottom: 1.5rem;
+	margin-right: 1.5rem;
+	font-size: 1.6rem;
+	background: var(--yellow);
+	border-radius: 5px;
+	font-weight: 600;
+	color: var(--dark-txt);
 }
 
 /* Projects */
@@ -374,11 +396,14 @@ textarea {
 
 .btn--med {
     padding: 1.5rem 4rem;
-    font-size: 1.8rem; }
+    font-size: 1.8rem; 
+}
+
 .btn--theme {
 	background: #0062b9;
 	color: var(--white_2); 
 }
+
 .btn--theme-inv {
 	color: #0062b9;
 	background: var(--white_2);
@@ -386,9 +411,10 @@ textarea {
 	box-shadow: none;
 	padding: calc(1.5rem - 2px) calc(5rem - 2px); 
 }
+
 .btn {
-	background: #ffecd1;
-	color: #003049;
+	background: var(--btn);
+	color: var(--dark-txt);
 	letter-spacing: 2px;
 	display: inline-block;
 	font-weight: 700;
@@ -401,24 +427,7 @@ textarea {
 	background-color: var(--red);
 	color: var(--white_2);
 }
-  /* Skill badgets */
-
-.skills {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.skills__skill {
-	padding: 1rem 2rem;
-	margin-bottom: 1.5rem;
-	margin-right: 1.5rem;
-	font-size: 1.6rem;
-	background: var(--yellow);
-	border-radius: 5px;
-	font-weight: 600;
-	color: #424242;
-}
-
+ 
 /*  MOUSE CONTROL */
 
 .mouse-scroll-cont {
@@ -448,17 +457,17 @@ textarea {
 	background-color: var(--red);
 	border-radius: 50%;
 	opacity: 1;
-	animation: wheel 1.3s infinite;
-	-webkit-animation: wheel 1.3s infinite;
+	animation: mouse 1.3s infinite;
+	-webkit-animation: mouse 1.3s infinite;
   }
 
-  @keyframes wheel {
+  @keyframes mouse {
 	to {
 	 opacity:0;
 	 top:27px
 	}
    }
-   @-webkit-keyframes wheel {
+   @-webkit-keyframes mouse {
 	to {
 	 opacity:0;
 	 top:27px
