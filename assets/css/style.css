@@ -107,7 +107,6 @@ textarea {
 	background-size: cover;
   	}
 .about {
-	
 	background: linear-gradient(to right, rgba(114, 221, 247, 0.6), rgba(29, 53, 87, 0.6)), url(../../images/shape_02.jpg);
 	background-repeat: no-repeat;
 	background-size: cover; 
@@ -129,7 +128,6 @@ textarea {
 		  padding: 8rem 0; } }
 
 .projects {
-
 	background: linear-gradient(to left, rgba(158, 216, 219, 0.6), rgba(0,98,185,0.6)), url(../../images/shape_03b.jpg);
 	background-repeat: no-repeat;
 	background-size: cover; 
