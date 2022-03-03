@@ -2,7 +2,10 @@
 
 :root {
 	--white_1: #fff8f0;  
-	--white_2: #fef9ef;    
+	--white_2: #fef9ef;
+	--red: #d64045;
+	--black: #050505;
+	--yellow: #ffbd00;    
 	--angle: 90deg; /* angle of the arrow */
   }
 
@@ -15,10 +18,17 @@
 	font-family: inherit;
 }
 
+/* Custom scrollbar Firefox Browsers */
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--red) var(--black);
+  }
+
 html {
 	height: 100%;
 	font-size: 62.5%;
-  	scroll-behavior: smooth; }
+  	scroll-behavior: smooth;  }
   	@media only screen and (max-width: 75em) {
   		html {
     	  font-size: 59%; } }
@@ -27,7 +37,8 @@ html {
     	  font-size: 56%; } }
     @media only screen and (min-width: 112.5em) {
     	html {
-      	  font-size: 65%; } 
+      	  font-size: 65%; }
+	
 }
 
 body {
@@ -38,8 +49,26 @@ body {
   	font-family: 'Roboto Serif', sans-serif;
   	font-weight: 400;
   	overflow-x: hidden;
-  	overflow-y: scroll;	
+  	overflow-y: scroll;
+	scrollbar-width: auto;
+	scrollbar-color: var(--red) var(--black);
 }
+
+/* Scroll bar Webkit */
+
+body::-webkit-scrollbar {
+	width: 15px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+	background: var(--black);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background-color: var(--red);    /* color of the scroll thumb */
+	border-radius: 20px;       /* roundness of the scroll thumb */
+	border: 3px solid var(--black);  /* creates padding around scroll thumb */
+  }
 	
 a {
 	text-decoration: none;
@@ -219,7 +248,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 6px;
     width: 5rem;
-    background: #d64045;
+    background: var(--red);
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -369,7 +398,7 @@ textarea {
 }
 
 .btn:hover {
-	background-color: #d64045;
+	background-color: var(--red);
 	color: var(--white_2);
 }
   /* Skill badgets */
@@ -384,7 +413,7 @@ textarea {
 	margin-bottom: 1.5rem;
 	margin-right: 1.5rem;
 	font-size: 1.6rem;
-	background: #ffbd00;
+	background: var(--yellow);
 	border-radius: 5px;
 	font-weight: 600;
 	color: #424242;
@@ -402,7 +431,7 @@ textarea {
   .mouse {
 	width: 25px;
 	height: 40px;
-	border: 3px solid #d64045;
+	border: 3px solid var(--red);
 	border-radius: 60px;
 	position: relative;
 	overflow: hidden;
@@ -416,7 +445,7 @@ textarea {
 	top: 7px;
 	left: 50%;
 	transform: translateX(-50%);
-	background-color: #d64045;
+	background-color: var(--red);
 	border-radius: 50%;
 	opacity: 1;
 	animation: wheel 1.3s infinite;
