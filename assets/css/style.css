@@ -183,6 +183,15 @@ textarea {
 	margin-top: -40px;
 }
 
+.contact-top {
+	clip-path: polygon(0 0,100% 0,100% 100%,calc(50% + 4.14px + 5.00rem) 100%,50% calc(100% - 5rem - 4.14px),calc(50% - 4.14px - 5.00rem) 100%,0 100%);
+  }
+  .footer-bottom {
+	clip-path: polygon(0 5rem,calc(50% - 5.00rem) 5rem,50% 0,calc(50% + 5.00rem) 5rem,100% 5rem,100% 100%,0 100%);
+	margin-top: calc(10px - 5rem);
+  }
+
+
 
 #h-33 {
 	height: 33% !important;
@@ -450,16 +459,18 @@ textarea {
   /* Footer */
   
   footer {
-	font-weight: 300;
+	font-weight: 500;
+	font-size: 2.4rem;
 	display: flex;
 	justify-content: space-evenly;
 	padding: 2rem;
 	background: var(--main-gray);
 	border-top: 4px solid var(--main-red);
+	height: 200px;
   }
   
   footer > p {
-	margin: 2rem;
+	margin: 8rem;
   }
   
   footer i {
