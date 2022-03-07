@@ -232,21 +232,36 @@
 		<!-- Footer Section -->
 
 	<footer class="footer-bottom">
-	<p>&copy; Created by JGT</p>
+		<p>&copy; Created by JGT 
+			<script type="text/javascript">
+
+                    copyright=new Date();
+
+                    update=copyright.getFullYear();
+
+                    document.write(" " + update);
+
+        </script>
+		
+		</p>
+		
 	</footer>
 
 
- <!-- Bootstrap Bundle with Popper -->
+ 	<!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
- 	<script>
+	<!-- jQuery 3.6.0    -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ 	<!-- FCC JavaScript -->
+	<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script> 
+	 <script>
 		// Initialize Bootstrap tooltips
 		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 			return new bootstrap.Tooltip(tooltipTriggerEl)
 		})
 	</script> 
- <!-- <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script> -->
+ 
 
 </body>
 </html>
