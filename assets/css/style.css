@@ -417,6 +417,7 @@ textarea {
 	width: 100%;
 	max-width: 1080px;
 	margin-top: 4rem;
+	margin-bottom: 4rem;
 	flex-wrap: wrap;
   }
   
