@@ -191,15 +191,17 @@ textarea {
 	margin-top: calc(10px - 5rem);
 }
 
-#h-33 {
+/* Gaps */
+
+.h-33 {
 	height: 33% !important;
 }
 
-#h-10 {
+.h-10 {
 	height: 10% !important;
 }
 
-#h-15 {
+.h-15 {
 	height: 15% !important;
 }
 
@@ -409,25 +411,11 @@ textarea {
 
 /* Contact section */
  
-.contact-header > h2 {
-	font-size: 6rem;
-  }
-  
-  @media (max-width: 28.75em) {
-	.contact-header > h2 {
-	  font-size: 4rem;
-	}
-  }
-  
-  .contact-header > p {
-	font-style: italic;
-  }
-  
   .contact-links {
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	max-width: 980px;
+	max-width: 1080px;
 	margin-top: 4rem;
 	flex-wrap: wrap;
   }
@@ -449,10 +437,6 @@ textarea {
 	border-radius: 2px;
   }
 
- /* .contact-btn:hover {
-	background-color: var(--red);
-	color: var(--white_2);
-} */
   
   /* Footer */
   
@@ -464,11 +448,12 @@ textarea {
 	padding: 2rem;
 	background: var(--main-gray);
 	border-top: 4px solid var(--main-red);
-	height: 17%;
+	min-height: 17%;
 	background: linear-gradient(45deg, hsla(358, 65%, 55%, 1.0) 0%, hsla(0, 100%, 89%, 0.8) 100%);
 	background: -moz-linear-gradient(45deg, hsla(358, 65%, 55%, 1.0) 0%, hsla(0, 100%, 89%, 0.8) 100%);
 	background: -webkit-linear-gradient(45deg, hsla(358, 65%, 55%, 1.0) 0%, hsla(0, 100%, 89%, 0.8) 100%);
   }
+
   
   footer > p {
 	margin: 8rem;
@@ -501,19 +486,6 @@ textarea {
 .btn--med {
     padding: 1.5rem 4rem;
     font-size: 1.8rem; 
-}
-
-.btn--theme {
-	background: #0062b9;
-	color: var(--white_2); 
-}
-
-.btn--theme-inv {
-	color: #0062b9;
-	background: var(--white_2);
-	border: 2px solid #0062b9;
-	box-shadow: none;
-	padding: calc(1.5rem - 2px) calc(5rem - 2px); 
 }
 
 .btn {
@@ -578,7 +550,7 @@ textarea {
 	}
    }
    
-/* Circle Effect*/
+/* Shine Circle Hover Effect */
 
 .shine {
     position: relative;
